@@ -28,5 +28,17 @@ A list of origami related resources.
 
 ## Theory
 
+**[`^        back to top        ^`](#)**
+
 - [Abrashi Origami School](https://abrashiorigami.com/)
 - [Tsai Origami](https://origami.abstreamace.com/)
+
+## Techniques
+
+**[`^        back to top        ^`](#)**
+
+
+## Diagrams
+
+**[`^        back to top        ^`](#)**
+
