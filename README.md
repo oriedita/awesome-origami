@@ -1,2 +1,32 @@
-# awesome-origami
-A list of origami related resources
+# Awesome-origami
+A list of origami related resources.
+
+## Table of Contents
+
+- [Software](#software)
+- [Community](#community)
+- [Theory](#theory)
+- [Techniques](#techniques)
+- [Diagrams](#diagrams)
+
+## Software
+
+**[`^        back to top        ^`](#)**
+
+- [Oriedita](https://oriedita.github.io) Crease Pattern Editor based on Orihime
+- [Oripa](https://github.com/oripa/oripa) Crease Pattern Editor
+- [Orihime](http://mt777.html.xdomain.jp/) Crease Pattern Editor
+- [Oripa (Android)](https://play.google.com/store/apps/details?id=com.origamitoolbox.oripa&gl=US) Crease Pattern Editor
+- [OrigamiDraw (iOS)](https://apps.apple.com/us/app/origamidraw/id1268158815) Crease Pattern Editor
+
+## Community
+
+**[`^        back to top        ^`](#)**
+
+- [Origami-dan (折り紙団)](https://disboard.org/server/553401275127955476) Origami Discord server
+- [snkhan.co.uk](https://snkhan.co.uk/forum/index.php) Origami forums
+
+## Theory
+
+- [Abrashi Origami School](https://abrashiorigami.com/)
+- [Tsai Origami](https://origami.abstreamace.com/)
