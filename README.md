@@ -59,6 +59,7 @@ Model databases
 
 **[`^        back to top        ^`](#)**
 
+- [Boice Wong](https://www.obb.design/gallery) - Personal website
 - [Hideo Komatsu](https://komatsu.origami.jp/) - Personal website
 - [Hojyo Takashi](https://hojyo.origami.jp/) - Personal website
 - [Jason Ku](http://jasonku.mit.edu/gallery.html) - Personal website
