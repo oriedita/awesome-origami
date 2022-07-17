@@ -42,6 +42,8 @@ See [Contributing](.github/CONTRIBUTING.md).
 
 **[`^        back to top        ^`](#)**
 
+- [Origami.me Paper Guide](https://origami.me/paper/) - A list of different kinds of papers used in origami.
+
 ## Models
 
 **[`^        back to top        ^`](#)**
