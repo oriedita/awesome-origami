@@ -9,6 +9,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 - [Community](#community)
 - [Theory](#theory)
 - [Techniques](#techniques)
+- [Models](#models)
 - [Diagrams](#diagrams)
 
 ## Software
@@ -51,6 +52,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 Model databases
 
 - [Gilad's origami page](https://giladorigami.com) - A very large database of origami models and book reviews.
+- [Origami.me blog](https://origami.me/blog/) - Blog showcasing different origami models.
 
 ## Diagrams
 
