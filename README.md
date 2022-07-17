@@ -70,3 +70,4 @@ Model databases
 
 **[`^        back to top        ^`](#)**
 
+- [CFC Diagram Pool](https://cfcorigami.com/diagram-pool) - Free diagrams provided by members of the Community for Creators of Origami.
