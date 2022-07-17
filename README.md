@@ -10,6 +10,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 - [Theory](#theory)
 - [Techniques](#techniques)
 - [Models](#models)
+- [Designers](#designers)
 - [Diagrams](#diagrams)
 
 ## Software
@@ -53,6 +54,17 @@ Model databases
 
 - [Gilad's origami page](https://giladorigami.com) - A very large database of origami models and book reviews.
 - [Origami.me blog](https://origami.me/blog/) - Blog showcasing different origami models.
+
+## Designers
+
+**[`^        back to top        ^`](#)**
+
+- [Hideo Komatsu](https://komatsu.origami.jp/) - Personal website
+- [Hojyo Takashi](https://hojyo.origami.jp/) - Personal website
+- [Jason Ku](http://jasonku.mit.edu/gallery.html) - Personal website
+- [Satoshi Kamiya](https://www.folders.jp/index.html) - Personal website
+- [Seth Friedman](http://friedmanorigami.com/) - Personal website
+- [Robert Lang](https://langorigami.com/) - Personal website
 
 ## Diagrams
 
