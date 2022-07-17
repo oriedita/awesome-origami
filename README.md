@@ -65,6 +65,7 @@ Model databases
 - [Robert Lang](https://langorigami.com/) - Personal website
 - [Satoshi Kamiya](https://www.folders.jp/index.html) - Personal website
 - [Seth Friedman](http://friedmanorigami.com/) - Personal website
+- [William Gozali (Gyosh)](https://wg-origami.blogspot.com/p/gallery.html) - Personal website
 
 ## Diagrams
 
