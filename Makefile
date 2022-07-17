@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 SHELL = /bin/bash
-AWESOME_BOT_OPTIONS = --allow-redirect --request-delay 1 --skip-save-results --allow 202 
+AWESOME_BOT_OPTIONS = --allow-redirect --request-delay 1 --allow 202 
 
 all: check_all
 
