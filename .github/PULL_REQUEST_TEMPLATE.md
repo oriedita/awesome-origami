@@ -5,12 +5,12 @@ Thank you for taking the time to work on a PR for Awesome-Origami!
 To ensure your PR is dealt with swiftly please check the following:
 
 - [ ] Submit one item per pull request. This eases reviewing and speeds up inclusion.
-- [ ] Format your submission as follows, where `Demo` and `Clients` are optional.
+- [ ] Format your submission as follows, where `Source Code` is optional.
   Do not add a duplicate `Source code` link if it is the same as the main link.
   Keep the short description under 250 characters and use [sentence case](https://en.wikipedia.org/wiki/Letter_case#Sentence_case)
   for it, even if the project's webpage or readme uses another capitalisation
   such as title case, all caps, small caps or all lowercase.
-  ``- [Name](http://homepage/) - Short description, under 250 characters, sentence case. ([Source Code](http://url.of/source/code), [Clients](https://url.to/list/of/related/clients-or-apps))``
+  ``- [Name](http://homepage/) - Short description, under 250 characters, sentence case. ([Source Code](http://url.of/source/code))``
 - [ ] Additions that are physical media like books must be marked `📖`.
   ``- [Name](http://homepage/) `📖` - Short description, under 250 characters, sentence case. ([Source Code](http://url.of/source/code), [Clients](https://url.to/list/of/related/clients-or-apps))``
 - [ ] Additions are inserted preserving alphabetical order.
