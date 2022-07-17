@@ -18,6 +18,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 - [BP Studio](https://bpstudio.abstreamace.com/) - Box pleating studio is a tool for creating box pleating origami designs. ([Source Code](https://github.com/bp-studio/box-pleating-studio))
 - [Oriedita](https://oriedita.github.io) - Crease Pattern Editor based on Orihime
 - [OrigamiDraw (iOS)](https://apps.apple.com/us/app/origamidraw/id1268158815) - Crease Pattern Editor for iOS
+- [Origami Simulator](https://origamisimulator.org/) - Simulate folding origami designs
 - [Orihime](http://mt777.html.xdomain.jp/) - Crease Pattern Editor
 - [Oripa](https://github.com/oripa/oripa) - Crease Pattern Editor 
 - [Oripa (Android)](https://play.google.com/store/apps/details?id=com.origamitoolbox.oripa&gl=US) - Crease Pattern Editor for Android
