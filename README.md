@@ -22,6 +22,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 - [Orihime](http://mt777.html.xdomain.jp/) - Crease Pattern Editor
 - [Oripa](https://github.com/oripa/oripa) - Crease Pattern Editor 
 - [Oripa (Android)](https://play.google.com/store/apps/details?id=com.origamitoolbox.oripa&gl=US) - Crease Pattern Editor for Android
+- [Rabbit Ear](https://rabbitear.org/book/) - Origami library written in JavaScript
 
 ## Community
 
