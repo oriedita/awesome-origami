@@ -62,6 +62,7 @@ Model databases
 - [Hideo Komatsu](https://komatsu.origami.jp/) - Personal website
 - [Hojyo Takashi](https://hojyo.origami.jp/) - Personal website
 - [Jason Ku](http://jasonku.mit.edu/gallery.html) - Personal website
+- [Naoki Terao](https://naokigami.com/) - Personal website
 - [Robert Lang](https://langorigami.com/) - Personal website
 - [Satoshi Kamiya](https://www.folders.jp/index.html) - Personal website
 - [Seth Friedman](http://friedmanorigami.com/) - Personal website
