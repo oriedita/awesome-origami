@@ -11,6 +11,8 @@ jobs:
     if: github.event_name  == 'pull_request' # if only run pull request when multiple trigger workflow
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.7'
