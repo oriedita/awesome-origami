@@ -2,8 +2,7 @@
 // node validate.js -r README.md  (Checks whole file)
 // node validate.js -r README.md -d temp.md  (Checks just the diff)
 
-import fs from "fs";
-import chalk from "chalk";
+const fs = require("fs");
 
 const LCERROR = '\x1b[31m%s\x1b[0m'; //red
 const LCWARN = '\x1b[33m%s\x1b[0m'; //yellow
@@ -24,8 +23,9 @@ let readme;
 let diff;
 
 // Detect if we find an entry: - [asdf](http://asdf) - Description
-const ENTRY_DETECT = /^\s{0,2}[-*]\s\[.*\).*-/
+const ENTRY_DETECT = /^\s{0,2}[-*]\s\[.+\).*-/
 const ENTRY_SELECT = /^\s{0,2}-\s(?<link>\[[^\]]+\]\([^)]+\))\s*(?<tag>`.+`)?\s*-\s+(?<description>[^)]{0,250}?)\s?(?<links>\(.+\))?$/
+const ENTRY_NAME_SELECT = /^\s{0,2}[-*]\s\[([^\]]+)\]/
 const LINK_SELECT = /\[(?<name>[^\]]+)]\((?<url>[^)]+)\)/g;
 
 //Parse the command options and set the pr var
@@ -40,6 +40,26 @@ function parseArgs(args) {
     if (pr === true) {
         logger.info(`Running on PR. README.md: ${args[args.indexOf('-r', 2) + 1]} diff: ${args[args.indexOf('-d', 2) + 1]}`)
     }
+}
+
+const findSections = (lines) => {
+    const sections = { 'None': [] }
+    let latestSection = 'None';
+
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i].trim();
+
+        let headerMatch = /^##\s(.+)$/.exec(line);
+
+        if (headerMatch) {
+            latestSection = headerMatch[1];
+            sections[latestSection] = []
+        } else if (entryFilter(line)) {
+            sections[latestSection].push(ENTRY_NAME_SELECT.exec(line)[1])
+        }
+    }
+
+    return sections
 }
 
 // Function to find lines with entries
@@ -84,7 +104,7 @@ function testLinks(line, entry) {
         let parsedLinks = [...links.matchAll(LINK_SELECT)]
         for (let i = 0; i < parsedLinks.length; i++) {
             if (!ALLOWED_LINK_TYPES.includes(parsedLinks[i].groups.name)) {
-                console.error(chalk.red(`${line}: Link name '${parsedLinks[i].groups.name}' not in ${ALLOWED_LINK_TYPES.join(", ")}`))
+                logger.error(`${line}: Link name '${parsedLinks[i].groups.name}' not in ${ALLOWED_LINK_TYPES.join(", ")}`)
 
                 return false;
             }
@@ -127,9 +147,29 @@ function entryErrorCheck() {
     let diffEntries = [];
 
     if (lines[0] === "") {
-        console.log(chalk.red("0 Entries Found, check your commandline arguments"))
+        logger.error("0 Entries Found, check your commandline arguments")
         process.exit(0)
     }
+
+    const sections = findSections(lines);
+
+    logger.info("Checking order in sections")
+    for (let [name, value] of Object.entries(sections)) {
+        let sortedValue = [...value].sort((a, b) => a.localeCompare(b))
+
+        for (let i = 0; i < value.length; i++) {
+            if (value[i] != sortedValue[i]) {
+                logger.error(`Order is invalid in section ${name}:`)
+                logger.error(`  - expected: ${sortedValue[i]}`)
+                logger.error(`  - got:      ${value[i]}`)
+                process.exit(0);
+            }
+        }
+    }
+
+    logger.success("Order of sections is valid")
+
+
     for (let i = 0; i < lines.length; i++) { // Loop through array of lines
         if (entryFilter(lines[i]) === true) { // filter out lines that don't start with * [)
             let e = {};
@@ -140,7 +180,7 @@ function entryErrorCheck() {
     }
 
     if (pr === true) {
-        console.log(chalk.cyan("Only testing the diff from the PR.\n"))
+        logger.info("Only testing the diff from the PR.\n")
         const diffLines = split(diff); // Inserts each line of diff into an array
         for (let l of diffLines) {
             if (entryFilter(l) === true) { // filter out lines that don't start with * [)
@@ -164,7 +204,7 @@ function entryErrorCheck() {
             }
         }
     } else {
-        console.log(chalk.cyan("Testing entire README.md\n"))
+        logger.info("Testing entire README.md\n")
         total = entries.length
         for (let e of entries) {
             let pass = checkEntry(e);
@@ -177,14 +217,14 @@ function entryErrorCheck() {
         }
     }
     if (totalFail > 0) {
-        console.log(chalk.blue(`\n-----------------------------\n`))
-        console.log(chalk.red(`${totalFail} Failed, `) + chalk.green(`${totalPass} Passed, `) + chalk.blue(`of ${total}`))
-        console.log(chalk.blue(`\n-----------------------------\n`))
+        logger.info(`\n-----------------------------\n`)
+        console.log(LCERROR + LCSUCCESS + LCINFO, `${totalFail} Failed, `, `${totalPass} Passed, `, `of ${total}`)
+        logger.info(`\n-----------------------------\n`)
         process.exit(1);
     } else {
-        console.log(chalk.blue(`\n-----------------------------\n`))
-        console.log(chalk.green(`${totalPass} Passed of ${total}`))
-        console.log(chalk.blue(`\n-----------------------------\n`))
+        logger.info(`\n-----------------------------\n`)
+        logger.success(`${totalPass} Passed of ${total}`)
+        logger.info(`\n-----------------------------\n`)
         process.exit(0)
     }
 }
