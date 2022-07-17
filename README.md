@@ -14,7 +14,7 @@ A list of origami related resources.
 **[`^        back to top        ^`](#)**
 
 - [Oriedita](https://oriedita.github.io) - Crease Pattern Editor based on Orihime
-- [Oripa](https://github.com/oripa/oripa) - Crease Pattern Editor ([Demoss](http://google.com))
+- [Oripa](https://github.com/oripa/oripa) - Crease Pattern Editor
 - [Orihime](http://mt777.html.xdomain.jp/) - Crease Pattern Editor
 - [Oripa (Android)](https://play.google.com/store/apps/details?id=com.origamitoolbox.oripa&gl=US) - Crease Pattern Editor for Android
 - [OrigamiDraw (iOS)](https://apps.apple.com/us/app/origamidraw/id1268158815) - Crease Pattern Editor for iOS
