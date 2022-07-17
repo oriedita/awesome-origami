@@ -32,6 +32,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 
 - [Origami-dan (折り紙団)](https://disboard.org/server/553401275127955476) - Origami Discord server
 - [snkhan.co.uk](https://snkhan.co.uk/forum/index.php) - Origami forums
+- [Origami Design School](https://discord.gg/dJbrYgYHPS) - Discord for origami design
 
 ## Theory
 
@@ -39,6 +40,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 
 - [Abrashi Origami School](https://abrashiorigami.com/) - Blog about origami design theory
 - [Tsai Origami](https://origami.abstreamace.com/) - Blog about origami theory
+- [Plant's design class](https://youtube.com/playlist?list=PL6CCJHQcukwXKpuGuBkVaVx4WgItD4WO9) - Videos about origami design theory
 
 ## Techniques
 
@@ -60,6 +62,7 @@ Model databases
 **[`^        back to top        ^`](#)**
 
 - [Boice Wong](https://www.obb.design/gallery) - Personal website
+- [Brandon Wong[(https://web.mit.edu/wongb/www/origami/resources/index.html) - Personal website
 - [Hideo Komatsu](https://komatsu.origami.jp/) - Personal website
 - [Hojyo Takashi](https://hojyo.origami.jp/) - Personal website
 - [Jason Ku](http://jasonku.mit.edu/gallery.html) - Personal website
