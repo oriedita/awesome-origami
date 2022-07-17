@@ -16,8 +16,8 @@ check_syntax_full:
 
 # check syntax in the diff from master to current branch
 check_syntax_diff:
-	git diff origin/master -U0 README.md | grep --perl-regexp --only-matching "(?<=^\+).*" >> temp.md && \
-	node tests/test.js -r README.md -d temp.md && \
+	git diff --ignore-cr-at-eol origin/main -U0 README.md | grep --perl-regexp --only-matching "(?<=^\+).*" > temp.md && \
+	node tests/validate.js -r README.md -d temp.md && \
 	awesome_bot -f temp.md $(AWESOME_BOT_OPTIONS)
 
 # check dead links
