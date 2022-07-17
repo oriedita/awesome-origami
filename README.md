@@ -1,6 +1,8 @@
 # Awesome-origami
 A list of origami related resources.
 
+See [Contributing](.github/CONTRIBUTING.md).
+
 ## Table of Contents
 
 - [Software](#software)
