@@ -151,25 +151,6 @@ function entryErrorCheck() {
         process.exit(0)
     }
 
-    const sections = findSections(lines);
-
-    logger.info("Checking order in sections")
-    for (let [name, value] of Object.entries(sections)) {
-        let sortedValue = [...value].sort((a, b) => a.localeCompare(b))
-
-        for (let i = 0; i < value.length; i++) {
-            if (value[i] != sortedValue[i]) {
-                logger.error(`Order is invalid in section ${name}:`)
-                logger.error(`  - expected: ${sortedValue[i]}`)
-                logger.error(`  - got:      ${value[i]}`)
-                process.exit(0);
-            }
-        }
-    }
-
-    logger.success("Order of sections is valid")
-
-
     for (let i = 0; i < lines.length; i++) { // Loop through array of lines
         if (entryFilter(lines[i]) === true) { // filter out lines that don't start with * [)
             let e = {};
@@ -225,8 +206,26 @@ function entryErrorCheck() {
         logger.info(`\n-----------------------------\n`)
         logger.success(`${totalPass} Passed of ${total}`)
         logger.info(`\n-----------------------------\n`)
-        process.exit(0)
     }
+    const sections = findSections(lines);
+
+    logger.info("Checking order in sections")
+    for (let [name, value] of Object.entries(sections)) {
+        let sortedValue = [...value].sort((a, b) => a.localeCompare(b))
+
+        for (let i = 0; i < value.length; i++) {
+            if (value[i] != sortedValue[i]) {
+                logger.error(`Order is invalid in section ${name}:`)
+                logger.error(`  - expected: ${sortedValue[i]}`)
+                logger.error(`  - got:      ${value[i]}`)
+                process.exit(1);
+            }
+        }
+    }
+
+    logger.success("Order of sections is valid")
+
+    process.exit(0);
 }
 
 parseArgs(process.argv)
