@@ -30,6 +30,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 
 **[`^        back to top        ^`](#)**
 
+- [Origami Design School](https://discord.gg/dJbrYgYHPS) - Discord for origami design
 - [Origami-dan (折り紙団)](https://disboard.org/server/553401275127955476) - Origami Discord server
 - [snkhan.co.uk](https://snkhan.co.uk/forum/index.php) - Origami forums
 
