@@ -19,6 +19,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 
 - [22.5° Refs Engine](https://adroitorigami.com/22-5%C2%B0-refs-engine-1) - Find folding sequences for 22.5° reference points ([Source Code](https://github.com/tancoda/22.5_refs_engine))
 - [BP Studio](https://bpstudio.abstreamace.com/) - Box pleating studio is a tool for creating box pleating origami designs ([Source Code](https://github.com/bp-studio/box-pleating-studio))
+- [Flat-Folder](https://origamimagiro.github.io/flat-folder/) - Compute and analyze valid flat-foldable states of flat-foldable crease patterns ([Source Code](https://github.com/origamimagiro/flat-folder))
 - [Oriedita](https://oriedita.github.io) - Crease Pattern Editor based on Orihime ([Source Code](https://github.com/oriedita/oriedita))
 - [Origami Simulator](https://origamisimulator.org/) - Simulate folding origami designs ([Source Code](https://github.com/amandaghassaei/OrigamiSimulator))
 - [OrigamiDraw (iOS)](https://apps.apple.com/us/app/origamidraw/id1268158815) - Crease Pattern Editor for iOS
