@@ -1,6 +1,12 @@
 #!/usr/bin/make -f
 SHELL = /bin/bash
-AWESOME_BOT_OPTIONS = --allow-redirect --request-delay 1 --allow 202 
+AWESOME_BOT_OPTIONS = --allow-redirect --request-delay 0.1 --allow 202 
+
+ifeq ($(OS),Windows_NT)
+	AB = awesome_bot
+else
+	AB = vendor/bin/awesome_bot
+endif
 
 all: check_all
 
@@ -18,9 +24,9 @@ check_syntax_full:
 check_syntax_diff:
 	git diff --ignore-cr-at-eol origin/main -U0 README.md | grep --perl-regexp --only-matching "(?<=^\+).*" > temp.md && \
 	node tests/validate.js -r README.md -d temp.md && \
-	vendor/bin/awesome_bot -f temp.md $(AWESOME_BOT_OPTIONS)
+	$(AB) -f temp.md $(AWESOME_BOT_OPTIONS)
 
 # check dead links
-# sudo apt install ruby && install --user-install awesome_bot
+# sudo apt install ruby && gem install --user-install awesome_bot
 awesome_bot:
-	vendor/bin/awesome_bot -f README.md $(AWESOME_BOT_OPTIONS)
+	$(AB) -f README.md $(AWESOME_BOT_OPTIONS)
