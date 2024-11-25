@@ -1,4 +1,5 @@
-# Awesome-origami
+# Awesome-origami [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 A list of origami related resources.
 
 See [Contributing](.github/CONTRIBUTING.md).
