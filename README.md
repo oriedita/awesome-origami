@@ -38,6 +38,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 **[`^        back to top        ^`](#)**
 
 - [Abrashi Origami School](https://abrashiorigami.com/) - Blog about origami design theory
+- [Plant's design class](https://youtube.com/playlist?list=PL6CCJHQcukwXKpuGuBkVaVx4WgItD4WO9) - Videos about origami design theory
 - [Tsai Origami](https://origami.abstreamace.com/) - Blog about origami theory
 
 ## Techniques
