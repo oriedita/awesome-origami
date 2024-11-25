@@ -74,9 +74,7 @@ function split(text) {
 
 //Test '- [Name](http://homepage/)'
 function testMainLink(text) {
-    let link = text.split('-')[1].trim();
-
-    if (!/^\[[^\]]+]\([^)]+\)$/.test(link)) {
+    if (!/^\s{0,2}-\s+\[[^\]]+]\([^)]+\)\s*-/.test(text)) {
         logger.error(text + " Link part is not formatted like [...](...)")
         return false;
     }
