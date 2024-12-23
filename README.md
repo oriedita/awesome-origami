@@ -84,6 +84,7 @@ Model databases
 - [Seth Friedman](http://friedmanorigami.com/) - Personal website
 - [Shuki Kato](https://shukigk.wixsite.com/shukikato) - Personal website
 - [William Gozali (Gyosh)](https://wg-origami.blogspot.com/p/gallery.html) - Personal website
+- [Katsuta Kyohei](https://katsuta-origami.com/) - Personal website
 
 ## Diagrams
 
