@@ -35,7 +35,7 @@ See [Contributing](.github/CONTRIBUTING.md).
 - [pluntbot](https://replit.com/@ThePlant/pluntbot) - A Discord Bot for converting CP to PNG format.
 - [Rabbit Ear](https://rabbitear.org/book/) - Origami library written in JavaScript ([Source Code](https://github.com/robbykraft/Origami))
 - [ReferenceFinder](https://mutsuntsai.github.io/reference-finder/) - Find folding sequences for points and lines, based on the [desktop app](https://langorigami.com/article/referencefinder/) by Robert J. Lang ([Source Code](https://github.com/mutsuntsai/reference-finder))
-- [TreeFaker](https://github.com/6849-2020/treefaker) - A web-based implementation of the TreeMaker ([Source Code](https://github.com/6849-2020/treefaker))
+- [TreeFaker](https://6849-2020.github.io/treefaker/) - A web-based implementation of the TreeMaker ([Source Code](https://github.com/6849-2020/treefaker))
 - [TreeMaker](https://langorigami.com/article/treemaker/) - Optimizer for circle/river packings by Robert J. Lang
 - [Universal Transitions Generator](https://theplantpsychologist.github.io/transitions-implementation/) - Solving transitional pleats based on the algorithm by Wong and Demaine ([Source Code](https://github.com/theplantpsychologist/transitions-implementation))
 
